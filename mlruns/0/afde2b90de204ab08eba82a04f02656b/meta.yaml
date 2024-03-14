@@ -1,0 +1,15 @@
+artifact_uri: file:///home/swatts/Project-Build-an-ML-Pipeline-Starter/mlruns/0/afde2b90de204ab08eba82a04f02656b/artifacts
+end_time: 1710437322602
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: afde2b90de204ab08eba82a04f02656b
+run_name: unique-sloth-542
+run_uuid: afde2b90de204ab08eba82a04f02656b
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1710437200700
+status: 3
+tags: []
+user_id: swatts

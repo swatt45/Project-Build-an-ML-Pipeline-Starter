@@ -1,0 +1,124 @@
+{
+    "os": "Linux-5.10.16.3-microsoft-standard-WSL2-x86_64-with-glibc2.31",
+    "python": "3.9.15",
+    "heartbeatAt": "2024-03-14T17:33:53.449620",
+    "startedAt": "2024-03-14T17:33:51.595005",
+    "docker": null,
+    "cuda": null,
+    "args": null,
+    "state": "running",
+    "program": "src/eda/eda.ipynb",
+    "root": "/home/swatts/Project-Build-an-ML-Pipeline-Starter",
+    "git": {
+        "remote": "https://github.com/swatt45/Project-Build-an-ML-Pipeline-Starter.git",
+        "commit": "077621b0ed54d88e8c2f5ef3dea7b725c4ea7c98"
+    },
+    "email": null,
+    "host": "RPL-6542LN3",
+    "username": "swatts",
+    "executable": "/home/swatts/miniconda3/envs/nyc_airbnb_dev/bin/python",
+    "cpu_count": 8,
+    "cpu_count_logical": 16,
+    "cpu_freq": {
+        "current": 2611.1979999999994,
+        "min": 0.0,
+        "max": 0.0
+    },
+    "cpu_freq_per_core": [
+        {
+            "current": 2611.198,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2611.198,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2611.198,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2611.198,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2611.198,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2611.198,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2611.198,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2611.198,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2611.198,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2611.198,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2611.198,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2611.198,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2611.198,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2611.198,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2611.198,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2611.198,
+            "min": 0.0,
+            "max": 0.0
+        }
+    ],
+    "disk": {
+        "total": 250.98248672485352,
+        "used": 14.545036315917969
+    },
+    "gpu": "NVIDIA RTX A4000 Laptop GPU",
+    "gpu_count": 1,
+    "gpu_devices": [
+        {
+            "name": "NVIDIA RTX A4000 Laptop GPU",
+            "memory_total": 8589934592
+        }
+    ],
+    "memory": {
+        "total": 49.58285140991211
+    }
+}
