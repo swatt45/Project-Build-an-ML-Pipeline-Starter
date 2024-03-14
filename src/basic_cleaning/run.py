@@ -33,7 +33,6 @@ def go(args):
     df = df[idx].copy()
     df['last_review'] = pd.to_datetime(df['last_review'])
     # TODO: add code to fix the issue happened when testing the model
-    df.dropna(subset=['price'], inplace=True)
 
     # Save the cleaned data
     logger.info('Saving and exporting cleaned data.')

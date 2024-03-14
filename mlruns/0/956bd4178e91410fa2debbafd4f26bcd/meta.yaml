@@ -1,0 +1,15 @@
+artifact_uri: file:///home/swatts/Project-Build-an-ML-Pipeline-Starter/mlruns/0/956bd4178e91410fa2debbafd4f26bcd/artifacts
+end_time: 1710445602043
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 956bd4178e91410fa2debbafd4f26bcd
+run_name: kindly-ape-55
+run_uuid: 956bd4178e91410fa2debbafd4f26bcd
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1710445589852
+status: 3
+tags: []
+user_id: swatts

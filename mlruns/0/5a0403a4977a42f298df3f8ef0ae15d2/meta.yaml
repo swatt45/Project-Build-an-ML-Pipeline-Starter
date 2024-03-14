@@ -1,0 +1,15 @@
+artifact_uri: file:///home/swatts/Project-Build-an-ML-Pipeline-Starter/mlruns/0/5a0403a4977a42f298df3f8ef0ae15d2/artifacts
+end_time: 1710445804431
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 5a0403a4977a42f298df3f8ef0ae15d2
+run_name: classy-mink-711
+run_uuid: 5a0403a4977a42f298df3f8ef0ae15d2
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1710445786170
+status: 3
+tags: []
+user_id: swatts

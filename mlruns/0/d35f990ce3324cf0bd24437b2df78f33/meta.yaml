@@ -1,0 +1,15 @@
+artifact_uri: file:///home/swatts/Project-Build-an-ML-Pipeline-Starter/mlruns/0/d35f990ce3324cf0bd24437b2df78f33/artifacts
+end_time: 1710445804298
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: d35f990ce3324cf0bd24437b2df78f33
+run_name: upbeat-ox-982
+run_uuid: d35f990ce3324cf0bd24437b2df78f33
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1710445787828
+status: 3
+tags: []
+user_id: swatts
