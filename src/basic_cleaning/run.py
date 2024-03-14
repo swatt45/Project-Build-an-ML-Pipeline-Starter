@@ -46,8 +46,7 @@ def go(args):
     artifact.add_file('clean_sample.csv')
     run.log_artifact(artifact)
     
-# TODO: In the code below, fill in the data type for each argumemt. The data type should be str, float or int. 
-# TODO: In the code below, fill in a description for each argument. The description should be a string.
+
 if __name__ == "__main__":
 
     parser = argparse.ArgumentParser(description="A very basic data cleaning")
@@ -55,42 +54,42 @@ if __name__ == "__main__":
     parser.add_argument(
         "--input_artifact", 
         type = str,
-        help = ## INSERT DESCRIPTION HERE,
+        help = 'Ininital artifact to be cleaned',
         required = True
     )
 
     parser.add_argument(
         "--output_artifact", 
         type = str,
-        help = ## INSERT DESCRIPTION HERE,
+        help = 'Output artifact for cleaned data',
         required = True
     )
 
     parser.add_argument(
         "--output_type", 
         type = str,
-        help = ## INSERT DESCRIPTION HERE,
+        help = 'Type of the output dataset',
         required = True
     )
 
     parser.add_argument(
         "--output_description", 
         type = str,
-        help = ## INSERT DESCRIPTION HERE,
+        help = 'Description of the output dataset',
         required = True
     )
 
     parser.add_argument(
         "--min_price", 
         type = float,
-        help = ## INSERT DESCRIPTION HERE,
+        help = 'Minumim house price to be considered',
         required = True
     )
 
     parser.add_argument(
         "--max_price",
         type = float,
-        help = ## INSERT DESCRIPTION HERE,
+        help = 'Maximum house price to be considered',
         required = True
     )
 
