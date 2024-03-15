@@ -48,6 +48,9 @@ def go(args):
     with open(args.rf_config) as fp:
         rf_config = json.load(fp)
     run.config.update(rf_config)
+     
+    logger.info("Printing Random Forest JSON Config")
+    print(rf_config)
 
     # Fix the random seed for the Random Forest, so we get reproducible results
     rf_config['random_state'] = args.random_seed
@@ -71,7 +74,6 @@ def go(args):
 
     # Then fit it to the X_train, y_train data
     logger.info("Fitting")
-
     ######################################
     # Fit the pipeline sk_pipe by calling the .fit method on X_train and y_train
     sk_pipe.fit(X_train, y_train)    
@@ -82,6 +84,8 @@ def go(args):
     r_squared = sk_pipe.score(X_val, y_val)
 
     y_pred = sk_pipe.predict(X_val)
+
+    logger.info("Getting MAE")
     mae = mean_absolute_error(y_val, y_pred)
 
     logger.info(f"Score: {r_squared}")
@@ -96,7 +100,10 @@ def go(args):
     ######################################
     # Save the sk_pipe pipeline as a mlflow.sklearn model in the directory "random_forest_dir"
     # HINT: use mlflow.sklearn.save_model
+    logger.info("Get Signature")
     signature = mlflow.models.infer_signature(X_val, y_pred)
+
+    logger.info("Saving model")
     mlflow.sklearn.save_model(
         sk_pipe,
         "random_forest_dir", 
@@ -106,8 +113,11 @@ def go(args):
     )
     ######################################
 
+    logger.info("Printing Pipe")
+    print(sk_pipe)
 
     # Upload the model we just exported to W&B
+    logger.info("Loading model to W&B")
     artifact = wandb.Artifact(
         args.output_artifact,
         type = 'model_export',
@@ -118,9 +128,14 @@ def go(args):
     run.log_artifact(artifact)
 
     # Plot feature importance
+    logger.info("Feature Importance")
+
+    logger.info("Printing processed_features")
+    print(processed_features)    
     fig_feat_imp = plot_feature_importance(sk_pipe, processed_features)
 
     ######################################
+    logger.info("Summarize r2 and MAE")
     # Here we save variable r_squared under the "r2" key
     run.summary['r2'] = r_squared
     # Now save the variable mae under the key "mae".
@@ -137,10 +152,10 @@ def go(args):
 
 def plot_feature_importance(pipe, feat_names):
     # We collect the feature importance for all non-nlp features first
-    feat_imp = pipe["random_forest"].feature_importances_[: len(feat_names)-1]
+    feat_imp = pipe.steps[1][1].feature_importances_[: len(feat_names)-1]
     # For the NLP feature we sum across all the TF-IDF dimensions into a global
     # NLP importance
-    nlp_importance = sum(pipe["random_forest"].feature_importances_[len(feat_names) - 1:])
+    nlp_importance = sum(pipe.steps[1][1].feature_importances_[len(feat_names) - 1:])
     feat_imp = np.append(feat_imp, nlp_importance)
     fig_feat_imp, sub_feat_imp = plt.subplots(figsize=(10, 10))
     # idx = np.argsort(feat_imp)[::-1]
