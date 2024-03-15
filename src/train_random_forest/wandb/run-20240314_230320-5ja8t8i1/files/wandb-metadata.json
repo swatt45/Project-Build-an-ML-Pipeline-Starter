@@ -1,0 +1,140 @@
+{
+    "os": "Linux-5.10.16.3-microsoft-standard-WSL2-x86_64-with-glibc2.31",
+    "python": "3.9.18",
+    "heartbeatAt": "2024-03-15T04:03:22.764988",
+    "startedAt": "2024-03-15T04:03:20.778345",
+    "docker": null,
+    "cuda": null,
+    "args": [
+        "--trainval_artifact",
+        "trainval_data.csv:latest",
+        "--val_size",
+        "0.2",
+        "--random_seed",
+        "42",
+        "--stratify_by",
+        "neighbourhood_group",
+        "--rf_config",
+        "/home/swatts/Project-Build-an-ML-Pipeline-Starter/multirun/2024-03-14/23-03-17/0/rf_config.json",
+        "--max_tfidf_features",
+        "5",
+        "--output_artifact",
+        "random_forest_export"
+    ],
+    "state": "running",
+    "program": "/home/swatts/Project-Build-an-ML-Pipeline-Starter/src/train_random_forest/run.py",
+    "codePath": "src/train_random_forest/run.py",
+    "git": {
+        "remote": "https://github.com/swatt45/Project-Build-an-ML-Pipeline-Starter.git",
+        "commit": "6d0dd7d3e07316e10d2f70ed950d0b79fdc47ffb"
+    },
+    "email": "swatt45@wgu.edu",
+    "root": "/home/swatts/Project-Build-an-ML-Pipeline-Starter",
+    "host": "RPL-6542LN3",
+    "username": "swatts",
+    "executable": "/home/swatts/miniconda3/envs/mlflow-d4b1f96dc532f504eb9efdaf044cf3963121c7de/bin/python",
+    "cpu_count": 8,
+    "cpu_count_logical": 16,
+    "cpu_freq": {
+        "current": 2611.199,
+        "min": 0.0,
+        "max": 0.0
+    },
+    "cpu_freq_per_core": [
+        {
+            "current": 2611.199,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2611.199,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2611.199,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2611.199,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2611.199,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2611.199,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2611.199,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2611.199,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2611.199,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2611.199,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2611.199,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2611.199,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2611.199,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2611.199,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2611.199,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2611.199,
+            "min": 0.0,
+            "max": 0.0
+        }
+    ],
+    "disk": {
+        "total": 250.98248672485352,
+        "used": 18.919631958007812
+    },
+    "gpu": "NVIDIA RTX A4000 Laptop GPU",
+    "gpu_count": 1,
+    "gpu_devices": [
+        {
+            "name": "NVIDIA RTX A4000 Laptop GPU",
+            "memory_total": 8589934592
+        }
+    ],
+    "memory": {
+        "total": 49.58285140991211
+    }
+}
