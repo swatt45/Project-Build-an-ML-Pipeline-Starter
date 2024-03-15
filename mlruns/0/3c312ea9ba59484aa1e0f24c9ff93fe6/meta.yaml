@@ -1,0 +1,15 @@
+artifact_uri: file:///home/swatts/Project-Build-an-ML-Pipeline-Starter/mlruns/0/3c312ea9ba59484aa1e0f24c9ff93fe6/artifacts
+end_time: 1710508875995
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 3c312ea9ba59484aa1e0f24c9ff93fe6
+run_name: righteous-hawk-613
+run_uuid: 3c312ea9ba59484aa1e0f24c9ff93fe6
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1710508842643
+status: 4
+tags: []
+user_id: swatts
