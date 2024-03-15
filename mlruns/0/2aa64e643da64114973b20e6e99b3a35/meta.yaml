@@ -1,0 +1,15 @@
+artifact_uri: file:///home/swatts/Project-Build-an-ML-Pipeline-Starter/mlruns/0/2aa64e643da64114973b20e6e99b3a35/artifacts
+end_time: 1710474486422
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 2aa64e643da64114973b20e6e99b3a35
+run_name: abundant-stork-901
+run_uuid: 2aa64e643da64114973b20e6e99b3a35
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1710474472093
+status: 4
+tags: []
+user_id: swatts
