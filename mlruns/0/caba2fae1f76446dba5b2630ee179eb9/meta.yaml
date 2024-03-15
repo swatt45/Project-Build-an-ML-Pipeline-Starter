@@ -1,0 +1,15 @@
+artifact_uri: file:///home/swatts/Project-Build-an-ML-Pipeline-Starter/mlruns/0/caba2fae1f76446dba5b2630ee179eb9/artifacts
+end_time: 1710475424314
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: caba2fae1f76446dba5b2630ee179eb9
+run_name: resilient-crab-961
+run_uuid: caba2fae1f76446dba5b2630ee179eb9
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1710475398307
+status: 4
+tags: []
+user_id: swatts
