@@ -1,0 +1,15 @@
+artifact_uri: file:///home/swatts/Project-Build-an-ML-Pipeline-Starter/mlruns/0/db3833c90be740c8b4f5585961933dcd/artifacts
+end_time: 1710477543458
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: db3833c90be740c8b4f5585961933dcd
+run_name: illustrious-ape-793
+run_uuid: db3833c90be740c8b4f5585961933dcd
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1710477449609
+status: 4
+tags: []
+user_id: swatts
