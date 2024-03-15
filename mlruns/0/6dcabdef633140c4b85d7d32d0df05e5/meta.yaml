@@ -1,0 +1,15 @@
+artifact_uri: file:///home/swatts/Project-Build-an-ML-Pipeline-Starter/mlruns/0/6dcabdef633140c4b85d7d32d0df05e5/artifacts
+end_time: 1710509211995
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 6dcabdef633140c4b85d7d32d0df05e5
+run_name: resilient-crane-945
+run_uuid: 6dcabdef633140c4b85d7d32d0df05e5
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1710509182955
+status: 4
+tags: []
+user_id: swatts

@@ -1,0 +1,15 @@
+artifact_uri: file:///home/swatts/Project-Build-an-ML-Pipeline-Starter/mlruns/0/6c41f0cdb81e45e6afbb6b83b43fdf67/artifacts
+end_time: 1710475424469
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 6c41f0cdb81e45e6afbb6b83b43fdf67
+run_name: merciful-hen-528
+run_uuid: 6c41f0cdb81e45e6afbb6b83b43fdf67
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1710475396391
+status: 4
+tags: []
+user_id: swatts
