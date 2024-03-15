@@ -88,16 +88,17 @@ def go(config: DictConfig):
                 }
             )            
 
-        if "train_random_forest" in active_steps:
+        if "train_random_forest" in active_steps:            
             # NOTE: we need to serialize the random forest configuration into JSON
             rf_config = os.path.abspath("rf_config.json")
             with open(rf_config, "w+") as fp:
                 json.dump(dict(config["modeling"]["random_forest"].items()), fp)  # DO NOT TOUCH
 
-            # NOTE: use the rf_config we just created as the rf_config parameter for the train_random_forest
-            # step
-            ##################
             _ = mlflow.run(
+                # NOTE: use the rf_config we just created as the rf_config parameter for the train_random_forest
+                # step
+                ##################   
+                os.path.join(hydra.utils.get_original_cwd(), "src", "train_random_forest"),             
                 'main',
                 parameters = {
                     "trainval_artifact":"trainval_data.csv:latest",
@@ -109,9 +110,9 @@ def go(config: DictConfig):
                     "output_artifact":"random_forest_export"
                 }
             )
-            ##################
+                ##################
 
-            pass
+            
 
         if "test_regression_model" in active_steps:
 

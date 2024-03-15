@@ -21,6 +21,7 @@ from sklearn.preprocessing import OrdinalEncoder, OneHotEncoder, FunctionTransfo
 
 import wandb
 from sklearn.ensemble import RandomForestRegressor
+from sklearn.ensemble import RandomForestClassifier
 from sklearn.metrics import mean_absolute_error
 from sklearn.pipeline import Pipeline, make_pipeline
 
@@ -229,12 +230,11 @@ def get_inference_pipeline(rf_config, max_tfidf_features):
     # HINT: Use the explicit Pipeline constructor so you can assign the names to the steps, do not use make_pipeline
 
     sk_pipe = Pipeline(
-        steps =[
+        steps=[
             ("preprocessor", preprocessor),
-            ("classifier", RandomForestClassifier(**model_config["random_forest"])),
+            ("classifier", RandomForestClassifier(**rf_config)),
         ]
     )
-
     return sk_pipe, processed_features
     ######################################
 

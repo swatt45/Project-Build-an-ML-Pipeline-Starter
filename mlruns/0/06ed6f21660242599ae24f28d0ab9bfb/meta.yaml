@@ -1,0 +1,15 @@
+artifact_uri: file:///home/swatts/Project-Build-an-ML-Pipeline-Starter/mlruns/0/06ed6f21660242599ae24f28d0ab9bfb/artifacts
+end_time: 1710472116998
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 06ed6f21660242599ae24f28d0ab9bfb
+run_name: hilarious-frog-289
+run_uuid: 06ed6f21660242599ae24f28d0ab9bfb
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1710472029728
+status: 4
+tags: []
+user_id: swatts

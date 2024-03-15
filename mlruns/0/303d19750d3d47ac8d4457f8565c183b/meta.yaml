@@ -1,0 +1,15 @@
+artifact_uri: file:///home/swatts/Project-Build-an-ML-Pipeline-Starter/mlruns/0/303d19750d3d47ac8d4457f8565c183b/artifacts
+end_time: 1710473063957
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 303d19750d3d47ac8d4457f8565c183b
+run_name: capricious-fawn-976
+run_uuid: 303d19750d3d47ac8d4457f8565c183b
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1710473049430
+status: 4
+tags: []
+user_id: swatts
